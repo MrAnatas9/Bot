@@ -2,7 +2,7 @@ import logging
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes, CallbackQueryHandler, ConversationHandler
 from config import BOT_TOKEN, ADMIN_ID, CLAN_LINK
-from database import (
+from database_supabase import (
     users, applications, messages_to_admin, tasks,
     save_user, get_user, get_all_users, save_application, get_application, 
     approve_application, reject_application, update_user_nickname, update_user_jobs,
